@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #fce4ec, #e3f2fd);
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: gradientFlow 12s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #00adb5;
+}
+
+.hero {
+    padding: 100px 20px 60px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.subtext {
+    font-size: 18px;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 60px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+}
+
+.option img {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.1));
+}
+
+.option a button {
+    background-color: white;
+    border: 2px solid #aaa;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.option a button:hover {
+    background-color: #e1f0ff;
+    border-color: #00adb5;
+    color: #00adb5;
+}

@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #8e44ad;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+video {
+    border-radius: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#recommendBtn {
+    background: linear-gradient(to right, #8e44ad, #3498db);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#recommendBtn:hover {
+    background: linear-gradient(to right, #7d3c98, #2980b9);
+}
+
+#recommendation {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 20px;
+    display: none;
+}
+
+.quote-box {
+    background-color: #444;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.song-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.song {
+    background-color: #555;
+    color: white;
+    padding: 14px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.song a {
+    color: white;
+    text-decoration: none;
+}
+
+.song-button {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 15px;
+    margin: 10px 10px 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.song-button:hover {
+    background-color: #f0f0f0;
+    color: #000;
+    border-color: #888;
+}
